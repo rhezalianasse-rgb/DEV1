@@ -1,0 +1,107 @@
+@import url('https://unpkg.com/mvp.css');
+
+:root {
+	--mvp-ink: #26343a;
+	--mvp-muted: #68777d;
+	--mvp-accent: #147a72;
+	--mvp-accent-dark: #0f5f59;
+	--mvp-border: #dce5e3;
+	--mvp-page: #f3f7f6;
+	--bs-primary: var(--mvp-accent);
+	--bs-primary-rgb: 20, 122, 114;
+}
+
+body.bg-light {
+	color: var(--mvp-ink);
+	background-color: var(--mvp-page) !important;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--mvp-ink);
+	font-weight: 650;
+}
+
+.card {
+	overflow: hidden;
+	border: 1px solid var(--mvp-border) !important;
+	border-radius: 8px;
+	background-color: #fff;
+}
+
+.table {
+	--bs-table-color: var(--mvp-ink);
+	--bs-table-border-color: var(--mvp-border);
+}
+
+.table-responsive > .table {
+	display: table;
+	width: 100% !important;
+}
+
+.table thead th {
+	white-space: nowrap;
+}
+
+.form-control,
+.form-select {
+	border-color: var(--mvp-border);
+	border-radius: 5px;
+}
+
+.form-control:focus,
+.form-select:focus {
+	border-color: var(--mvp-accent);
+	box-shadow: 0 0 0 0.2rem rgb(20 122 114 / 16%);
+}
+
+.btn {
+	border-radius: 5px;
+	font-weight: 600;
+}
+
+.btn,
+.btn:visited {
+	color: var(--bs-btn-color);
+	text-decoration: none;
+}
+
+.btn:hover {
+	color: var(--bs-btn-hover-color);
+}
+
+button.btn,
+input[type="submit"].btn {
+	font-size: var(--bs-btn-font-size);
+	line-height: var(--bs-btn-line-height);
+	margin: 0;
+	padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+}
+
+.table form {
+	min-width: 0;
+	max-width: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	text-align: inherit;
+}
+
+.btn-primary {
+	--bs-btn-bg: var(--mvp-accent);
+	--bs-btn-border-color: var(--mvp-accent);
+	--bs-btn-hover-bg: var(--mvp-accent-dark);
+	--bs-btn-hover-border-color: var(--mvp-accent-dark);
+	--bs-btn-active-bg: var(--mvp-accent-dark);
+	--bs-btn-active-border-color: var(--mvp-accent-dark);
+}
+
+@media (max-width: 576px) {
+	.container {
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+}
